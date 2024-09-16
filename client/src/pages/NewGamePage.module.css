@@ -1,0 +1,10 @@
+.logo {
+  margin-bottom: 40px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
