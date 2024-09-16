@@ -1,7 +1,6 @@
 import { useState } from "react";
 import globalStyles from "../../styles/Page.module.css";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from "./NewODGame.module.css";
+// import styles from "./NewODGame.module.css";
 import {
   Box,
   Breadcrumb,
