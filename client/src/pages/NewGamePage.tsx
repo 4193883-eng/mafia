@@ -12,14 +12,14 @@ export function NewGamePage() {
         <div className={styles.buttonGroup}>
           <Button
             as={Link}
-            to={"/one-device"}
+            to={"/one-device/stage-one"}
             variant={"solid"}
             colorScheme={"teal"}
           >
             New One-Device Game
           </Button>
-          <Button isDisabled={true}>Host a game</Button>
-          <Button isDisabled={true}>Join a game</Button>
+          <Button isDisabled>Host a game</Button>
+          <Button isDisabled>Join a game</Button>
         </div>
       </main>
     </div>

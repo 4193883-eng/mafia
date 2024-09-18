@@ -1,6 +1,6 @@
 import { useState } from "react";
-import globalStyles from "../../styles/Page.module.css";
-// import styles from "./NewODGame.module.css";
+import globalStyles from "../../../styles/Page.module.css";
+// import styles from "./_.module.css";
 import {
   Box,
   Breadcrumb,
@@ -20,6 +20,7 @@ import {
   SliderTrack,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom";
 
 export function NewODGame() {
   const [playerCount, setPlayerCount] = useState<number>(1);
@@ -93,9 +94,11 @@ export function NewODGame() {
           <SliderThumb />
         </Slider>
         <ButtonGroup alignSelf={"flex-end"}>
-          <Button>Back</Button>
+          <Button as={Link} to='/'>Back</Button>
           <Button
             colorScheme={"blue"}
+            as={Link}
+            to={'../stage-two'}
             isDisabled={
               !(
                 typeof playerCount === "number" &&
