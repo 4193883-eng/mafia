@@ -8,6 +8,7 @@ function App() {
       <Route path="/" element={<NewGamePage />} />
       <Route path="/one-device/">
         <Route path="stage-one" element={<NewODGame />} />
+        <Roiu
       </Route>
     </Routes>
   );
