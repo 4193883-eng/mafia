@@ -61,14 +61,14 @@ export function NewODGame() {
         <NumberInput
           value={inputVal}
           max={15}
-          min={1}
+          min={4}
           textAlign={"center"}
           onChange={handleChange}
           w={"6em"}
           display={"block"}
           clampValueOnBlur={true}
           onBlur={() => {
-            if (inputVal === "") setInputVal("1");
+            if (inputVal === "") setInputVal("4");
           }}
         >
           <NumberInputField />
@@ -78,7 +78,7 @@ export function NewODGame() {
         </NumberInput>
         <Slider
           max={15}
-          min={1}
+          min={4}
           step={1}
           value={playerCount}
           onChange={(num) => {
@@ -94,15 +94,17 @@ export function NewODGame() {
           <SliderThumb />
         </Slider>
         <ButtonGroup alignSelf={"flex-end"}>
-          <Button as={Link} to='/'>Back</Button>
+          <Button as={Link} to="/">
+            Back
+          </Button>
           <Button
             colorScheme={"blue"}
             as={Link}
-            to={'../stage-two'}
+            to={"../stage-two"}
             isDisabled={
               !(
                 typeof playerCount === "number" &&
-                playerCount >= 1 &&
+                playerCount >= 4 &&
                 playerCount <= 15
               )
             }

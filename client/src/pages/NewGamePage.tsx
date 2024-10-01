@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./NewGamePage.module.css";
 import globalStyles from "../styles/Page.module.css";
 import { Button } from "@chakra-ui/react";
-import { Logo } from "../components/Logo";
+import { Logo } from "../components/Logo/Logo";
 
 export function NewGamePage() {
   return (
